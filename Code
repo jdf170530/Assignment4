@@ -1,0 +1,46 @@
+package DALTON;
+import java.util.Scanner;
+import java.util.Arrays;
+public class StrictlyIdentical {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter 5 elements of list 1: ");
+		int [] list1 = new int[5];
+		int [] list2 = new int[5];
+		for(int i = 0; i < 5; i ++)
+		{
+			list1[i] = input.nextInt();
+		}
+		System.out.print("Enter 5 elements of list 2: ");
+		for(int j = 0; j < 5; j ++)
+		{
+			list2[j] = input.nextInt();
+		}
+		if(equals(list1, list2))
+		{
+			System.out.print("Two lists are stictly identical");
+		}
+		else
+		{
+			System.out.print("Two lists are not strictly identical");
+		}
+	}
+	public static boolean equals(int[] list1, int[] list2)
+	{
+
+		for(int i = 0; i < 5;  i++)
+		{
+			if(list1[i] == list2[i])
+			{
+				
+			}
+			else
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+
+}
